@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Grand Core2Dine Hotel-Rooms</h1>
+      <p>Choose the perfect room for your comfortable stay.</p>
+
+      <nav>
+        <a href="index.html">Home</a> | <a href="rooms.html">Rooms</a> |
+        <a href="room-comparison.html">Comapre Rooms</a> |
+        <a href="booking.html">Booking</a> |
+        <a href="restaurant.html">Restaurant</a> |
+        <a href="gallery.html">Gallery</a> |
+        <a href="facilities.html">Facilities</a> |
+        <a href="media.html">Media</a> |
+        <a href="contacts.html">Contact & FAQ</a>
+        <hr />
+      </nav>
+    </header>
+
+    <form>
+      <h2>Hotel Booking Form</h2>
+      <p>
+        Please provide the required information to complete hotel reservation.
+      </p>
+
+      <fieldset>
+        <legend><b>Guest Information</b></legend>
+        <label>Full Name:</label><br />
+        <input type="text" placeholder="Enter your full name " />
+        <br /><br />
+
+        <label>Email Address:</label><br />
+        <input type="email" placeholder="Example@email.com" />
+        <br /><br />
+
+        <label>Phone Number:</label><br />
+        <input
+          type="tel"
+          min="0"
+          max="10"
+          placeholder="Enter 10 digit number"
+        />
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend><b>Stay Details</b></legend>
+        <label>Check-in Date:</label><br />
+        <input type="date" />
+        <br /><br />
+
+        <label>Check-out Date:</label><br />
+        <input type="date" />
+        <br /><br />
+
+        <label>Number of Guests:</label><br />
+        <input type="number" min="0" max="5" placeholder="1 -" /><br /><br />
+
+        <label>Room Type:</label><br />
+
+        <select id="room" name="room">
+          <option value="">-- Select Room Type --</option>
+          <option value="single">Standard Room</option>
+          <option value="double">Deluxe Room</option>
+          <option value="deluxe">Executive Room</option>
+          <option value="suite">family Suite</option>
+          <option value="suite">Presidential Suite</option>
+        </select><br><br>
+
+        <label>Number of Rooms:</label><br />
+        <input type="number" min="1" max="10" placeholder="1" />
+      </fieldset>
+      <br />
+      <br />
+
+      <fieldset>
+        <legend><b>Meal Preference</b></legend>
+        <label>Select your mean Preferences</label><br /><br />
+
+        <input type="radio" id="veg" name="meal" value="Vegetarian" />
+        <label>Vegetarian</label><br />
+
+        <input type="radio" id="Non-Veg" name="meal" value="Non-Vegetarian" />
+        <label>Non-Vegetarian</label><br />
+
+        <input type="radio" id="Vegan" name="meal" value="Vegan" />
+        <label>Vegan</label>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend><b>Airport Pickup</b></legend>
+        <label>Do you require airport pickup?</label><br />
+        <input type="radio" value="Yes" />
+        <label>Yes</label>
+        <input type="radio" value="No" />
+        <label>No</label>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend><b>Additional Information</b></legend>
+        <label for="requests">Special Requests:</label><br />
+
+        <textarea
+          id="requests"
+          name="requests"
+          rows="5"
+          cols="60"
+          placeholder="Enter any special requests..."
+        ></textarea>
+
+        <br />
+        <label>ID Proof Upload:</label>
+        <input type="file" />
+        <br /><br />
+        <input type="checkbox" />
+        <label>I agree to the hotel terms and conditions.</label>
+      </fieldset>
+
+      <fieldset>
+        <legend><b>Submit Booking</b></legend><br>
+        <button type="submit">Submit Booking</button>
+        <button type="reset"> Reset Form</button>
+          </fieldset>
+    </form>
+    <hr>
+
+    
+    
+
+    <hr>
+
+    <footer>
+    <p>&copy;2026 Grand Core2Dine Hotel.All Rights Reserved.</p>
+    </footer>
+    
+  </body>
+</html>
